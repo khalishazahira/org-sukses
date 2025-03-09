@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>buat org sukses</strong>
+                        <p> Helalur, happy birthdayy I hope you see how cool and incredible you are. Wishing you ALL the happiness in the world, hope you find what you’re looking for. Semoga jadi lebih baik lagi, makin sayang ortu dan keluarga, sehat selalu, panjang umur, apalagi ya? semoga menang OSN GEOGRAFI (BATU), semoga masuk univ terbaik, semoga beneran 
+                             jd businessman yg tetep menjunjung tinggi nilai agama, beneran jadi ke gunung Rinjani, semoga 
+                             selalu dikelilingi org org baik dan pokonya doa terbaik buat ka Fakhri!! Don't hesitate to tell me ur
+                             story 100% aman ko (gada yg tau tntang tokyo ghoul)  -hira
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
